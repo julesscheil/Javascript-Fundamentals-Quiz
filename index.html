@@ -5,32 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 </head>
 
 <body>
     <main>
-        <div>
-            <div id="left-side" class="w-25 p-3 float-left" style="width: 120px;">Highscores</div>
-            <div class="justify-content-center">
+        <div class="row">
+            <!-- Highscore button -->
+            <div id="left-side" class="col-sm">Highscores</div>
+            <div class="col-lg-6">
+                <!-- Start page section -->
                 <div id="start-page">
                     <h1>Coding Quiz</h1>
-                    <p>this is a quiz</p>
+                    <p>Try to answer the following questions within the time limit. Incorrect answers penalize by ten
+                        seconds!</p>
                     <button id="start-button">Start Quiz</button>
                 </div>
+                <!-- Quiz content container -->
                 <div id="quiz-content" style="display: none">
                     <div id="current-question" class="card text-center card-body w-50"></div>
+                    <!-- Wrong answer container -->
                     <div id="wrong-answer" style="display: none">
                         <h1>Wrong!</h1>
                     </div>
                 </div>
+                <!-- End game container -->
+                <div id="end-game" style="display: none">
+                    <h2>Game Over</h2>
+                </div>
             </div>
-            <div class="float-right">Timer:</div>
+            <!-- timer container -->
+            <div class="float-right col-sm">Timer:<h1 class="time"></h1>
+            </div>
         </div>
-
-        <!-- <div><button id="next-question">Next Question</button></div> -->
     </main>
     <script src="script.js"></script>
 </body>
