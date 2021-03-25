@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 </head>
+
 <body>
-    <h1>Coding Quiz</h1>
     <main>
-        <div id="current-question">
+        <div>
+            <div id="left-side" class="w-25 p-3 float-left" style="width: 120px;">Highscores</div>
+            <div class="justify-content-center">
+                <div id="start-page">
+                    <h1>Coding Quiz</h1>
+                    <p>this is a quiz</p>
+                    <button id="start-button">Start Quiz</button>
+                </div>
+                <div id="quiz-content" style="display: none">
+                    <div id="current-question" class="card text-center card-body w-50"></div>
+                    <div id="wrong-answer" style="display: none">
+                        <h1>Wrong!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="float-right">Timer:</div>
         </div>
-        <div> <button id="next-question">Next Question</button>
-        </div>
+
+        <!-- <div><button id="next-question">Next Question</button></div> -->
     </main>
-<script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
